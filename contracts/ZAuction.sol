@@ -140,7 +140,7 @@ contract ZAuction is ERC721Holder, ERC1155Holder {
         }
         emit AuctionCreated(
            _NFTcontract,
-         _bidERC20,
+         address(_bidERC20),
          _tokenId,
          _startPrice,
          _amount,
@@ -372,7 +372,7 @@ contract ZAuction is ERC721Holder, ERC1155Holder {
           addressNFTtoAddressFeeERC20[_NFTContractAdd] = _ERC20FeeAdd;
           addressNFTtoCreator[_NFTContractAdd] = msg.sender;
         }
-        emit CreatorsFeeSet(_ERC20FeeAdd, _NFTContractAdd, _feePercentage, _isZNS);
+        emit CreatorsFeeSet(address(_ERC20FeeAdd), _NFTContractAdd, _feePercentage, _isZNS);
     }
 
 /**

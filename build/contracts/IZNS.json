@@ -21,26 +21,26 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"creatorOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/stan36/repos/zer0/auction/contracts/interfaces/IZNS.sol\":\"IZNS\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/stan36/repos/zer0/auction/contracts/interfaces/IZNS.sol\":{\"keccak256\":\"0x8a5c41ce9cd3e6af9ef4cc75d659ba7dda450d216d8e24ab74db2cb65b7c530d\",\"urls\":[\"bzz-raw://9666161ae23e81cd47eda1bf674b1029676f9584412d0bcd17ba15159ca11001\",\"dweb:/ipfs/QmUjY9m1ZD1Ybp33kr9XRhUZ4mcBqnPyCjmKNPvmK5Vpzu\"]}},\"version\":1}",
+  "metadata": "{\"compiler\":{\"version\":\"0.6.6+commit.6c089d02\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"creatorOf\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/home/stan36/repos/zer0/zAuction/contracts/interfaces/IZNS.sol\":\"IZNS\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/home/stan36/repos/zer0/zAuction/contracts/interfaces/IZNS.sol\":{\"keccak256\":\"0x8a5c41ce9cd3e6af9ef4cc75d659ba7dda450d216d8e24ab74db2cb65b7c530d\",\"urls\":[\"bzz-raw://9666161ae23e81cd47eda1bf674b1029676f9584412d0bcd17ba15159ca11001\",\"dweb:/ipfs/QmUjY9m1ZD1Ybp33kr9XRhUZ4mcBqnPyCjmKNPvmK5Vpzu\"]}},\"version\":1}",
   "bytecode": "0x",
   "deployedBytecode": "0x",
   "immutableReferences": {},
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.6.6;\n\n\n\nabstract contract IZNS {\n  function creatorOf(uint256 id) public view virtual returns (address);\n}\n",
-  "sourcePath": "/home/stan36/repos/zer0/auction/contracts/interfaces/IZNS.sol",
+  "sourcePath": "/home/stan36/repos/zer0/zAuction/contracts/interfaces/IZNS.sol",
   "ast": {
-    "absolutePath": "/home/stan36/repos/zer0/auction/contracts/interfaces/IZNS.sol",
+    "absolutePath": "/home/stan36/repos/zer0/zAuction/contracts/interfaces/IZNS.sol",
     "exportedSymbols": {
       "IZNS": [
-        895
+        1467
       ]
     },
-    "id": 896,
+    "id": 1468,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 887,
+        "id": 1459,
         "literals": [
           "solidity",
           "^",
@@ -48,7 +48,7 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:6"
       },
       {
         "abstract": true,
@@ -57,9 +57,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 895,
+        "id": 1467,
         "linearizedBaseContracts": [
-          895
+          1467
         ],
         "name": "IZNS",
         "nodeType": "ContractDefinition",
@@ -68,7 +68,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "589a1743",
-            "id": 894,
+            "id": 1466,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -76,18 +76,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 890,
+              "id": 1462,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 889,
+                  "id": 1461,
                   "mutability": "mutable",
                   "name": "id",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 894,
-                  "src": "73:10:2",
+                  "scope": 1466,
+                  "src": "73:10:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -95,10 +95,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 888,
+                    "id": 1460,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "73:7:2",
+                    "src": "73:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -108,21 +108,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "72:12:2"
+              "src": "72:12:6"
             },
             "returnParameters": {
-              "id": 893,
+              "id": 1465,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 892,
+                  "id": 1464,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 894,
-                  "src": "114:7:2",
+                  "scope": 1466,
+                  "src": "114:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -130,10 +130,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 891,
+                    "id": 1463,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "114:7:2",
+                    "src": "114:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -144,33 +144,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "113:9:2"
+              "src": "113:9:6"
             },
-            "scope": 895,
-            "src": "54:69:2",
+            "scope": 1467,
+            "src": "54:69:6",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 896,
-        "src": "27:98:2"
+        "scope": 1468,
+        "src": "27:98:6"
       }
     ],
-    "src": "0:126:2"
+    "src": "0:126:6"
   },
   "legacyAST": {
-    "absolutePath": "/home/stan36/repos/zer0/auction/contracts/interfaces/IZNS.sol",
+    "absolutePath": "/home/stan36/repos/zer0/zAuction/contracts/interfaces/IZNS.sol",
     "exportedSymbols": {
       "IZNS": [
-        895
+        1467
       ]
     },
-    "id": 896,
+    "id": 1468,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 887,
+        "id": 1459,
         "literals": [
           "solidity",
           "^",
@@ -178,7 +178,7 @@
           ".6"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:23:2"
+        "src": "0:23:6"
       },
       {
         "abstract": true,
@@ -187,9 +187,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 895,
+        "id": 1467,
         "linearizedBaseContracts": [
-          895
+          1467
         ],
         "name": "IZNS",
         "nodeType": "ContractDefinition",
@@ -198,7 +198,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "589a1743",
-            "id": 894,
+            "id": 1466,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -206,18 +206,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 890,
+              "id": 1462,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 889,
+                  "id": 1461,
                   "mutability": "mutable",
                   "name": "id",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 894,
-                  "src": "73:10:2",
+                  "scope": 1466,
+                  "src": "73:10:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -225,10 +225,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 888,
+                    "id": 1460,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "73:7:2",
+                    "src": "73:7:6",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -238,21 +238,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "72:12:2"
+              "src": "72:12:6"
             },
             "returnParameters": {
-              "id": 893,
+              "id": 1465,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 892,
+                  "id": 1464,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 894,
-                  "src": "114:7:2",
+                  "scope": 1466,
+                  "src": "114:7:6",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -260,10 +260,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 891,
+                    "id": 1463,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "114:7:2",
+                    "src": "114:7:6",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -274,20 +274,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "113:9:2"
+              "src": "113:9:6"
             },
-            "scope": 895,
-            "src": "54:69:2",
+            "scope": 1467,
+            "src": "54:69:6",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
           }
         ],
-        "scope": 896,
-        "src": "27:98:2"
+        "scope": 1468,
+        "src": "27:98:6"
       }
     ],
-    "src": "0:126:2"
+    "src": "0:126:6"
   },
   "compiler": {
     "name": "solc",
@@ -295,7 +295,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2021-02-17T22:58:17.811Z",
+  "updatedAt": "2021-02-26T23:22:10.032Z",
   "devdoc": {
     "methods": {}
   },
